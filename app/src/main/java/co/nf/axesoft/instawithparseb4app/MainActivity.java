@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.SaveCallback;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
 
        //Gravação
-       ParseObject pontuacao = new ParseObject("Pontuacao");
-        pontuacao.put("nome","Tuquinhas");
-        pontuacao.put("pontos",500);
+      /* ParseObject pontuacao = new ParseObject("Pontuacao");
+        pontuacao.put("nome","Pugs");
+        pontuacao.put("pontos",756);
         pontuacao.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
@@ -36,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        */
 
         //Recuperar e atualiza o registro
-        ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
+        /*ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
 
         consulta.getInBackground("LkSITapbu3", new GetCallback<ParseObject>() {
             @Override
@@ -51,7 +55,30 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        */
 
+
+        ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Pontuacao");
+        //filtro.whereGreaterThan("pontos",800);
+        //filtro.whereGreaterThanOrEqualTo("pontos",1500);
+        //filtro.whereLessThan("pontos",800);
+        filtro.whereEndsWith("nome","a");
+        //Listar os dados
+        filtro.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if(e==null){
+                    for(ParseObject parseObject : objects){
+                        Log.i("listarDados","nome : "+ parseObject.get("nome")
+                                +"| Pontos : " + parseObject.get("pontos") );
+                    }
+
+                }else{
+                    Log.i("listarDados","Erro "+ e.getMessage());
+                }
+
+            }
+        });
 
     }
 }
