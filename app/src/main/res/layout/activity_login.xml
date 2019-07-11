@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/gradiente_background"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/eTxtUserLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:hint="Digite seu usuário"
+            android:textColorHint="@color/primary_light"
+            android:textColor="@color/primary_light"
+            android:background="@drawable/background_edittext"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+        <EditText
+            android:id="@+id/eTxtPassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="6dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Digite sua senha"
+            android:textColorHint="@color/primary_light"
+            android:textColor="@color/primary_light"
+            android:background="@drawable/background_edittext"
+            android:layout_below="@+id/eTxtUserLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <Button
+            android:id="@+id/btnEntrarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/background_button"
+            android:text="@string/btnEntrar"
+            android:textColor="@color/primary_light"
+            android:layout_below="@+id/eTxtPassLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnEntrarLogin"
+            android:layout_centerHorizontal="true"
+            android:text="Não corinthians"
+            android:textColor="@color/primary_light"
+            android:layout_below="@+id/btnEntrarLogin"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

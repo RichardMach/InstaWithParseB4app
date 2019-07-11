@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">InstaWithParseB4app</string>
+    <string name="app_name">Insta Clone</string>
+    <string name="btnEntrar">Entrar</string>
 </resources>
