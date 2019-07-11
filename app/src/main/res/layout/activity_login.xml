@@ -68,7 +68,7 @@
 
 
         <TextView
-            android:id="@+id/txtView"
+            android:id="@+id/txtCadastrar"
             android:layout_width="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
@@ -76,6 +76,7 @@
             android:text="Não possui cadastro ? Crie aqui!"
             android:textColor="@color/secondary_text"
             android:layout_below="@+id/btnEntrarLogin"
+
 
             />
 

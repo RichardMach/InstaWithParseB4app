@@ -65,6 +65,14 @@
         android:text="@string/btnCadastrar"
         android:textColor="@color/primary_light"
         android:layout_below="@+id/eTxtPassCadastro"/>
+    <TextView
+        android:id="@+id/txtAbrirLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possui conta? Faça o Login"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@id/btnCadastrar"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
