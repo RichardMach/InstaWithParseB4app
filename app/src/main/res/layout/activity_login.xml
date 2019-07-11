@@ -35,8 +35,7 @@
             android:textColor="@color/primary_light"
             android:background="@drawable/background_edittext"
             android:layout_below="@+id/imageView"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+
              />
 
         <EditText
@@ -53,8 +52,7 @@
             android:textColor="@color/primary_light"
             android:background="@drawable/background_edittext"
             android:layout_below="@+id/eTxtUserLogin"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+
             />
 
         <Button
@@ -66,20 +64,17 @@
             android:background="@drawable/background_button"
             android:text="@string/btnEntrar"
             android:textColor="@color/primary_light"
-            android:layout_below="@+id/eTxtPassLogin"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            />
+            android:layout_below="@+id/eTxtPassLogin"/>
+
 
         <TextView
             android:id="@+id/txtView"
             android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/btnEntrarLogin"
             android:layout_centerHorizontal="true"
-            android:text="Não corinthians"
-            android:textColor="@color/primary_light"
+            android:text="Não possui cadastro ? Crie aqui!"
+            android:textColor="@color/secondary_text"
             android:layout_below="@+id/btnEntrarLogin"
 
             />
