@@ -28,7 +28,8 @@
         android:layout_below="@+id/imageViewCadastro"
         android:layout_marginTop="15dp"
         android:layout_marginHorizontal="6dp"
-        android:textColor="@color/primary_light"/>
+        android:textColor="@color/primary_light"
+        android:focusable="true"/>
     <EditText
         android:id="@+id/eTxtEmailCadastro"
         android:layout_width="match_parent"
@@ -46,7 +47,7 @@
         android:id="@+id/eTxtPassCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:background="@drawable/background_edittext"
         android:padding="15dp"
         android:hint="Digite sua senha"
@@ -73,6 +74,15 @@
         android:textColor="@color/secondary_text"
         android:layout_below="@id/btnCadastrar"
         android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtMsgErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/secondary_text"
+        android:layout_below="@id/txtAbrirLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
 
 
 </RelativeLayout>

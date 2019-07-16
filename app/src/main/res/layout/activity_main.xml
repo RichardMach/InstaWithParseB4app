@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity"
-    android:background="@drawable/gradiente_background">
+    >
+    <include
+        android:id="@+id/toolbarMain"
+        layout="@layout/toolbar">
+
+    </include>
+    <TextView
+        android:layout_below="@+id/toolbarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:text="Menu"
+        android:textColor="@color/accent"/>
 
 
 </RelativeLayout>

@@ -2,4 +2,10 @@
     <string name="app_name">Insta Clone</string>
     <string name="btnEntrar">Entrar</string>
     <string name="btnCadastrar">Cadastrar</string>
+
+    <string name="item_sair">Sair</string>
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_compartilhar">Compartilhar</string>
+
+
 </resources>
